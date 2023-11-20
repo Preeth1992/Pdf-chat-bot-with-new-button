@@ -1,6 +1,6 @@
 
 import streamlit as st
-from dotenv import load_dotenv
+
 import pickle
 from PyPDF2 import PdfReader
 from streamlit_extras.add_vertical_space import add_vertical_space
@@ -16,7 +16,7 @@ import datetime
 
 
 
-load_dotenv()
+
 # Create a function to save chat history to a file
 def save_chat_history(messages):
     with open("chat_history.pkl", "wb") as file:
