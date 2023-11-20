@@ -16,7 +16,7 @@ import datetime
 
 
 
-
+openai_api_key =st.secrets['OPENAI_API_KEY']
 # Create a function to save chat history to a file
 def save_chat_history(messages):
     with open("chat_history.pkl", "wb") as file:
